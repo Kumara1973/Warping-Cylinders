@@ -1,12 +1,18 @@
 <html>
     <head>
-        <title>Meteor Crash</title>
+        <title>Warping Shapes</title>
         <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
     </head>
     <body>
         <a-scene>
-            <a-sky src="jungle.jpg"></a-sky>
-            <a-image src="dino1.png" height="40" width="40" position="0 0 -40.21"></a-image>
+            <a-cylinder height="5" radius="2" color="red" position="-2.36 3 -9.55" open-ended="true" side="double"
+                animation="property:scale; to:1 0 1; dur:5000; loop:true;"></a-cylinder>
+            <a-cylinder height="3" radius="1" color="green" position="-2.36 3 -9.55" open-ended="true" side="double"
+                animation="property:scale; to: 1 0 1; dur: 5000; loop:true; delay:2000;"></a-cylinder>
+            <a-cylinder height="4" radius="1.5" color="blue" position="-2.36 3 -9.55" open-ended="true" side="double"
+                animation="property:scale; to: 1 0 1; dur: 5000; loop:true; delay:1000;"></a-cylinder>
+            <a-cylinder height="4" radius="1" color="purple" position="5.95 3 -9.55" open-ended="true" side="double"
+                animation="property:scale; to: 5 1 1; dur:5000; loop:true;"></a-cylinder>
         </a-scene>
     </body>
 </html>
